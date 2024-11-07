@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from '@/components/navigation/nav';
 import Footer from '@/components/footer/footer';
+import { cn } from '@/lib/utils'
 
 const inter = Inter({
     subsets: ['latin'],
@@ -21,10 +22,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={inter.className}>
-            <body>
+        <html lang="en">
+            <body className={inter.className}>
                 <Nav />
-                {children}
+                <div className="px-6 md:px-12 max-w-7xl mx-auto">
+                    {children}
+                </div>
                 <Footer />
             </body>
         </html>
