@@ -1,15 +1,10 @@
-import { Inter } from 'next/font/google';
+import { FuturaRegular } from "@/lib/fonts";
 
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from '@/components/navigation/nav';
 import Footer from '@/components/footer/footer';
-import { cn } from '@/lib/utils'
 
-const inter = Inter({
-    subsets: ['latin'],
-    display: 'swap',
-})
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -23,9 +18,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={FuturaRegular.className}>
                 <Nav />
-                <div className="px-6 md:px-12 max-w-7xl mx-auto">
+                <div className="p-6 md:px-12 max-w-7xl mx-auto">
                     {children}
                 </div>
                 <Footer />
