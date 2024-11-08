@@ -26,3 +26,9 @@ export const FuturaRegular = localFont({
     src: '../public/fonts/futura/Futura Book font.ttf',
     display: 'swap',
 })
+
+
+export const FuturaBold = localFont({
+    src: '../public/fonts/futura/Futura Heavy font.ttf',
+    display: 'swap',
+})

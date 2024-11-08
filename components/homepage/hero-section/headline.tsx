@@ -9,7 +9,7 @@ import HomeImage from "@/public/home.png";
 
 const Headline = () => {
     return (
-        <div className="flex justify-center items-center gap-6">
+        <div className=" flex justify-center items-center gap-6">
             <div className="flex flex-col gap-3 w-[300px]">
                 <div
                     className={cn(
