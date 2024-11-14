@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Badge } from "@/components/ui/badge";
-import HomeImage from "@/public/home.png";
 
 const Headline = () => {
     return (
@@ -49,7 +48,7 @@ const Headline = () => {
                 <AspectRatio ratio={5 / 4}>
                     <Image
                         fill={true}
-                        src={HomeImage}
+                        src="/home.png"
                         alt="Image"
                         className="rounded-md object-cover hover:scale-110 transition-all duration-500 cursor-pointer"
                     />

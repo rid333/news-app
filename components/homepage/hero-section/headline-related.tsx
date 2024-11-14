@@ -1,18 +1,12 @@
 import { PoynterTextRegular } from "@/lib/fonts"
 import { BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { NewsCardType } from "@/lib/types"
 
-
-interface DummyNews {
-    id: number,
-    title: string,
-    time_read: number;
-    description: string,
-};
 
 const HeadlineRelated = () => {
 
-    const dummy_news: DummyNews[] = [
+    const dummy_news: NewsCardType[] = [
         {
             id: 1,
             title: "Trump hires campaign aide as White House chief of staff",
@@ -53,7 +47,7 @@ const HeadlineRelated = () => {
                     <div className="text-xs flex items-center gap-x-1.5">
                         <BookOpen size={12} /> {news.time_read} menit
                     </div>
-                    <div className="text-sm">{news.description.slice(0, 95)}...</div>
+                    <div className="text-sm">{news.description?.slice(0, 95)}...</div>
                 </li>
             ))}
         </ul>

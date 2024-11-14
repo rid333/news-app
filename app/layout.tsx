@@ -19,7 +19,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={FuturaRegular.className}>
                 <Nav />
-                <div className="p-6 md:px-12 max-w-7xl mx-auto h-[1000px]">
+                <div className="p-6 md:px-12 max-w-[1400px] mx-auto">
                     {children}
                 </div>
                 <Footer />
