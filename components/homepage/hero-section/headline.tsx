@@ -1,4 +1,4 @@
-import { PoynterTextRegular, FuturaRegular } from "@/lib/fonts";
+import { PoynterTextRegular } from "@/lib/fonts";
 import { Dot, CalendarClock, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -12,7 +12,7 @@ const Headline = () => {
             <div className="flex flex-col gap-3 w-[300px]">
                 <div
                     className={cn(
-                        "font-bold text-3xl hover:text-primary cursor-pointer transition",
+                        "text-3xl hover:text-primary cursor-pointer transition",
                         `${PoynterTextRegular.className}`,
                     )}
                 >
@@ -27,7 +27,7 @@ const Headline = () => {
                         <BookOpen size={16} /> 6 menit
                     </div>
                 </div>
-                <div className={cn("text-base", `${FuturaRegular.className}`)}>
+                <div className="text-base">
                     Donald Trump’s return to the White House is set to reshape US foreign
                     policy, promising potentially radical shifts on multiple fronts as war
                     and uncertainty grip parts of the world...

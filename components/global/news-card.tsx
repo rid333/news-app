@@ -1,4 +1,4 @@
-import { PoynterTextRegular, FuturaRegular, PoynterTextBold } from "@/lib/fonts"
+import { PoynterTextRegular, FuturaRegular } from "@/lib/fonts"
 import { CalendarClock, BookOpen, Dot } from "lucide-react"
 import { NewsCardType } from "@/lib/types"
 
@@ -63,16 +63,16 @@ export const NewsCardNormal = ({ title, description, img }: NewsCardType) => {
 export const NewsCardOverlay = ({ title, description, img }: NewsCardType) => {
     return (
         <Card className={`border-none text-foreground bg-background relative ${FuturaRegular.className}`}>
-            <div className="text-primary-foreground">
+            <div className="text-secondary">
                 <AspectRatio>
                     {img && <Image src={img} fill={true} alt="desc" className="object-cover rounded-md" />}
                     <div className="absolute inset-0 bg-black bg-opacity-40 rounded-md p-4 flex flex-col gap-3 justify-end">
                         <div className="flex items-center gap-x-1.5 text-sm">
                             <BookOpen size={13} /> 6 menit
                         </div>
-                        <h2 className={`text-xl font-bold ${PoynterTextRegular.className}`}>{title}</h2>
+                        <h2 className={`text-xl ${PoynterTextRegular.className}`}>{title}</h2>
                         <h3 className="text-sm">{description?.slice(0, 90)}...</h3>
-                        <div className="text-sm font-semibold flex gap-x-2 flex-wrap">
+                        <div className="text-sm flex gap-x-2 flex-wrap">
                             <Badge className="cursor-pointer" variant={"secondary"}>
                                 Politik
                             </Badge>

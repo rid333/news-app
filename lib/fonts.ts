@@ -32,3 +32,8 @@ export const FuturaBold = localFont({
     src: '../public/fonts/futura/Futura Heavy font.ttf',
     display: 'swap',
 })
+
+export const AvenirRegular = localFont({
+    src: '../public/fonts/avenir-font/AvenirLTStd-Roman.otf',
+    display: 'swap',
+})
