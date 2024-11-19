@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Badge } from "@/components/ui/badge"
-
 import Image from "next/image"
 
 export const NewsCardNormal = ({ title, description, img }: NewsCardType) => {
@@ -86,6 +85,6 @@ export const NewsCardOverlay = ({ title, description, img }: NewsCardType) => {
                     </div>
                 </AspectRatio>
             </div>
-        </Card >
+        </Card>
     )
 }
